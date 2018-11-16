@@ -93,7 +93,15 @@ class EffectedVideoChatActivity : AppCompatActivity() {
                 "EMBOSS" -> {
                     addGPUImageFilter(GPUImageEmbossFilter())
                 }
-                else -> {}
+                "SEPIA" -> {
+                    addGPUImageFilter(GPUImageSepiaFilter())
+                }
+                "NONE" -> {
+                    // For Debug
+                    addGPUImageFilter(GPUImageFilter())
+                }
+                else -> {
+                }
             }
 
 
